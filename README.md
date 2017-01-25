@@ -51,7 +51,7 @@ app.controller('UsersIndexController', ['$scope', function($scope) {
   
   $scope.events = [
       {title: 'NY', date: new Date([2015, 12, 31])},
-      {title: 'ID', date: new Date([2015, 6, 4])}
+      {title: 'ID', date: new Date([2015, 6, 4]), dateClass: 'highlight'}
     ];
 }]);
 ```
@@ -72,7 +72,8 @@ Both functions can get an object with data about clicked date:
   event: { // event will only be added for dates that have an event.
     title: "Some event",
     date: [Date Object]
-  }
+  },
+  dateClass: ''
 }
 ```
 
